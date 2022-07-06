@@ -1,0 +1,103 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    /*display: grid;
+    grid-template-columns: 1fr;*/
+    height: 700px;
+    width: 900px;
+    border-style: solid;
+    border-color: rgb(241, 236, 228);
+    border-width: 90px;
+    background-color: rgba(6, 3, 26);
+    margin: auto;
+}
+.wrapper{
+    background-color: rgb(27, 27, 44);
+    border-style: solid;
+    border-color: rgb(27, 27, 44);
+    border-width: 5px;
+    border-radius: 10px;
+    width: 275px;
+    height: 480px;
+    margin: 100px auto;
+    padding: 15px;
+}
+
+.design{
+    width: 17rem;
+    height: 17rem;
+    border: 1px solid rgb(27, 27, 44);
+    border-radius: 8px;
+    background: url("image/Equilibrium.jpg") no-repeat;
+    background-size: cover;
+   /* background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;*/
+}
+.design:hover{
+    background: linear-gradient(to bottom, rgba(58, 236, 212, 0.596), rgba(117, 208, 236, 0.767)),
+                         url("image/Equilibrium.jpg") no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+.design img{
+    color: white;
+}
+#i{
+    color: white;
+    position: absolute;
+    margin: 7.9rem 8.8rem 9.1rem 8.2rem;
+    display: none;
+}
+.design:hover #i {
+    display: unset;
+    margin: 7.9rem 8.8rem 9.1rem 8.2rem;
+}
+
+#p02{
+    color: white;
+}
+#p02:hover{
+    color: aqua;
+    cursor: pointer;
+}
+#p01{
+    color: lightslategray;
+}
+#p03{
+    color: aqua;
+}
+.icon{
+    display: flex;
+    justify-content: space-between;
+    border-bottom-style: inset;
+    border-bottom-width: 2px;
+    border-color: rgba(47, 39, 54, 0.685);
+    padding-bottom: 10px;
+}
+div > i{
+    font-style: normal;
+}
+.last{
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    padding-top: 10px;
+}
+
+@media screen and  (min-width: 400px){
+    body{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width: 480px) {
+    .container{
+        width: 320px;
+        height: 550px;
+        border-width: 0px;
+    }
+    
+}
